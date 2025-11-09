@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tentativa fracassada de Dark Mode -->
+    <style name="Theme.Nubes" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">#282828</item>
+        <item name="colorPrimaryVariant">@color/pink</item>
+        <item name="colorOnPrimary">@color/pink
+        </item>
+
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorSecondaryVariant">#282828</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:colorBackground">#282828</item>
+        <item name="android:windowBackground">#282828</item>
+        <item name="android:textColor">@color/pink</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">#282828</item>
+
+        <item name="materialCardViewStyle">@style/NubesCard.Dark</item>
+        <item name="android:itemBackground">#1E1E1E</item>
+    </style>
+
+    <style name="Theme.Nubes.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.Nubes.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Nubes.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColor">@color/pink</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NubesCard.Dark" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">#282828</item>
+        <item name="cardElevation">4dp</item>
+        <item name="strokeColor">@color/pink</item>
+    </style>
+
+</resources>
